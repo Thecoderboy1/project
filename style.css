@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: rgb(0 0 0 / 95%); */
+    /* background-color: rgba(255, 0, 0, 0.34); */
+}
+
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #ff0000;
+    ;
+    /* width: 100%; */
+     
+     
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+li {
+    padding: 10px 23px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 45px;
+    border-radius: 100%;
+    transition: all .2s ease-in-out;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+li:hover,
+li .active {
+    color: rgb(237, 219, 219);
+
+    transform: translateY(-4px);
+
+}
+
+li a:hover {
+    color: rgb(237, 219, 219);
+}
+
+.logo img:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.btn {
+    width: 115px;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    /* height: 50px; */
+    position: absolute;
+    top: 6px;
+    right: 10px;
+
+}
+
+.btn button {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: all .3s ease-in-out;
+}
+
+.btn button:hover {
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+ 
+
+/* -------------Home section css is here--------------- */
+
+.home {
+    display: flex;
+    padding: 3px 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* width: 100%; */
+    position: relative;
+    background-color: #0000009e;
+
+
+
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    background-image: url("Bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .86;
+    background-position: center;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.home h1 {
+    color: white;
+    text-align: center;
+}
+
+.home p {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    display: block;
+}
+
+/* services section */
+ #services{
+    margin: 34px ;
+    display: flex;
+ }
+ #services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(233 233 233);
+ }
+ #services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+ }
+ #services .box p{
+    font-size: 1rem;
+    font-weight: normal;
+ }
+ /* clint section */
+ #client-section{
+     /* height: 344px; */
+     position: relative;
+     background-color: #0affff;
+
+    
+ }
+ /* #client-section::before{
+    content: "";
+    position: absolute;
+    background: url('istockphoto-995925668-170667a.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .4;
+    background-size: cover;
+ } */
+ .clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .clients  img{
+    height: 123px;
+    /* border: 3px solid blue; */
+ }
+ .clientitem{
+    padding: 40px;
+ }
+ /* contact section
+  */
+#contact{
+    position: relative;
+
+    
+}
+#contact::before{
+    content: "";
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-image: url("Bg2.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: .4;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+#contact-box input,#contact-box textarea{
+    /* border: 3px solid blue; */
+    width: 100%;
+     
+     padding: .5rem;
+     
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+/* foooter */
+footer{
+    background-color: black;
+     color: white;
+     padding:  9px 20px;
+
+}
+/* utility clasess */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 15px;
+
+}
+
+.odrbtn {
+    padding: 6px 20px;
+    border: 1px solid;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 10px;
+    display: block;
+
+}
+
+.h-secondry {
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+.center{
+    text-align: center;
+}

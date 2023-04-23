@@ -1,0 +1,56 @@
+/* Negivation */
+#navbar{
+     display: flex;
+     flex-direction: column;
+     
+}
+.btn{
+    display: none;
+}
+li{
+    padding: 10px 16px;
+}
+/* home  */
+.home{
+ padding: 0px;
+ display: flex;
+ flex-direction: column;
+}
+.home h1{
+    font-size: 2.6rem;
+    
+
+}
+.home p{
+    font-size: 18px;
+     text-align: center;
+}
+/* services */
+#services{
+    display: flex;
+    flex-direction: column;
+
+}
+#services  .box{
+
+
+}
+#spacialimg{
+   width:  250px; 
+    
+}
+/* Client section  */
+.clients{
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.clientitem{
+    padding: 3px;
+}
+.clientitem img{
+    width: 66px;
+     padding: 3px;
+}
+/* contact section  */
+
+/* footer  */
